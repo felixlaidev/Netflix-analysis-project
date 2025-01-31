@@ -33,7 +33,7 @@ CREATE TABLE netflix (
 );
 ```
 ##  Business question
-```
+```sql
 /*
 Question 1:
 1. Classify Netflix content into two groups: those with descriptions containing either 'kill' or 'violence' (labeled 'Bad') and those without these keywords (labeled 'Good'). Provide the total number of titles in each category.
