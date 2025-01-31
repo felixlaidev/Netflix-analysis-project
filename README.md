@@ -4,10 +4,7 @@
 ## Project Overview
 This project analyzes Netflix's content catalog to uncover trends in movies and TV shows. Using SQL, we explore content distribution, ratings, release patterns, and thematic elements to derive actionable insights.
 
-```
-![Image](https://github.com/user-attachments/assets/9247fac7-65cd-4167-b5e4-bf37eb0bee0f)
-
-```
+![Image](https://github.com/user-attachments/assets/7e30f620-171c-4d58-8416-8626e2ac7b96)
 
 ## Objectives
 - Compare movie vs. TV show quantities
