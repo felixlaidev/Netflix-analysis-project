@@ -59,7 +59,7 @@ ORDER BY number_of_titles DESC;
 
 ```
 
-```
+```sql
 -- 2. List the numbers of movies and TV shows are available respectively on Netflix
 -- Goal: Analyze the distribution of different content types available on Netflix.
 
@@ -72,7 +72,7 @@ GROUP BY type;
 
 ```
 
-```
+```sql
 -- 3.List all TV shows that have more than 5 seasons.
 -- Goal: Locate TV shows that have more than 5 seasons.
 
@@ -84,7 +84,7 @@ AND CAST(SPLIT_PART(duration, ' ', 1) AS INTEGER) > 5;
 
 ```
 
-```
+```sql
 -- 4. Identify the most common rating assigned to movies and TV shows.
 -- Goal: Determine the most common rating for each content type.
 
@@ -99,7 +99,7 @@ SELECT type, rating, count
 FROM RankedRatings
 WHERE rank = 1;
 ```
-```
+```sql
 -- 5. Find all the titles (movies or TV shows) that do not have a director listed.
 -- Goal: Retrieve content that is missing a director.
 
@@ -108,7 +108,7 @@ SELECT *
 FROM netflix
 WHERE director IS NULL OR director = '';
 ```
-
+```sql
 -- 6. Which is the Longest TV Show available on Netflix?
 -- Goal: Identify the movie with the longest runtime.
 
@@ -119,8 +119,9 @@ select * from
   from netflix
   where type ='Movie') as subquery
 where duration = (select max(split_part(duration,' ',1):: numeric ) from netflix)
+```
 
-
+```sql
 -- 7. Identify all movies and TV shows directed by ‘Kim Seong-hun’.
 -- Goal: Retrieve all content directed by 'Kim Seong-hun'.
 
@@ -129,8 +130,8 @@ SELECT
 *
 FROM netflix
 where director='Kim Seong-hun';
-
-
+```
+```sql
 -- 8. Retrieve a list of all movies categorized as Action & Adventure.
 -- Goal:  Get all movies belong to Action & Adventure.
 
@@ -139,6 +140,8 @@ SELECT
 *
 FROM netflix
 where type='Movie' and listed_in LIKE'%Action & Adventure%';
+```
+```sql
 
 
 -- 9. How many items of content exist in each genre on Netflix?   
@@ -150,7 +153,8 @@ SELECT
 	COUNT(*) AS count
 FROM netflix
 GROUP BY genre;
-
+```
+```sql
 
 -- 10. List all the movies released in 2002
 -- Goal:Fetch all movies that were released in a particular year.
@@ -159,8 +163,8 @@ GROUP BY genre;
 SELECT * 
 FROM netflix
 WHERE type='Movie' and release_year = 2002
-
-
+```
+```sql
 -- 11. Find the top five countries that have contributed the most content to Netflix.
 -- Goal: Determine the top 5 countries with the largest number of content items in Netflix.
 
@@ -172,7 +176,8 @@ FROM netflix
 GROUP BY new_country
 ORDER BY total_contents DESC
 LIMIT 5;
-
+```
+```sql
 
 -- 12. Over the past five years, how many contents have been added to Netflix?
 -- Goal: Fetch contents that has been added to Netflix within the past 5 years.
@@ -185,8 +190,9 @@ SELECT
 FROM netflix
 WHERE TO_DATE(date_added, 'Month DD, YYYY') >= CURRENT_DATE - INTERVAL '5 years'
 ORDER BY date_added DESC;
+```
 
-
+```sql
 -- 13. How many movies has the actor ‘Leonardo DiCaprio’ appeared in over the past 20 years?
 -- Goal: calculate the number of movies featuring 'Leonardo DiCaprio' released in the past 20 years.
 
@@ -197,7 +203,8 @@ FROM netflix
 WHERE casts LIKE '%Leonardo DiCaprio%'
 AND type = 'Movie'AND release_year >= EXTRACT(YEAR FROM CURRENT_DATE) - 20;
 
-
+```
+```sql
 -- 14.Find the top 10 actors who have appeared in the most movies produced in United States.
 -- Goal: determine the top 10 actors with the highest number of appearances in movies produced in the United States.
 
@@ -210,8 +217,8 @@ WHERE country='United States'
 GROUP BY actor
 ORDER BY movie_count DESC
 LIMIT 10;
-
-
+```
+```sql
 -- 15. Determine the average number of content releases in United States per year. Return the top five years with the highest average content releases.
 -- Goal: calculate and rank the years based on the average number of content releases from the United States.
 
@@ -228,4 +235,4 @@ WHERE country ='United States'
 GROUP BY release_year
 ORDER BY avg_release DESC
 LIMIT 5;
-
+```
