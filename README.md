@@ -33,7 +33,7 @@ CREATE TABLE netflix (
 );
 ```
 ##  Business question
-
+```
 /*
 Question 1:
 1. Classify Netflix content into two groups: those with descriptions containing either 'kill' or 'violence' (labeled 'Bad') and those without these keywords (labeled 'Good'). Provide the total number of titles in each category.
@@ -57,9 +57,9 @@ FROM categorized_content
 GROUP BY content_category
 ORDER BY number_of_titles DESC;
 
+```
 
-
-
+```
 -- 2. List the numbers of movies and TV shows are available respectively on Netflix
 -- Goal: Analyze the distribution of different content types available on Netflix.
 
@@ -70,7 +70,9 @@ COUNT(*) AS typecount
 FROM netflix
 GROUP BY type;
 
+```
 
+```
 -- 3.List all TV shows that have more than 5 seasons.
 -- Goal: Locate TV shows that have more than 5 seasons.
 
@@ -80,8 +82,9 @@ FROM netflix
 WHERE type = 'TV Show' 
 AND CAST(SPLIT_PART(duration, ' ', 1) AS INTEGER) > 5;
 
+```
 
-
+```
 -- 4. Identify the most common rating assigned to movies and TV shows.
 -- Goal: Determine the most common rating for each content type.
 
@@ -95,8 +98,8 @@ WITH RankedRatings AS (
 SELECT type, rating, count
 FROM RankedRatings
 WHERE rank = 1;
-
-
+```
+```
 -- 5. Find all the titles (movies or TV shows) that do not have a director listed.
 -- Goal: Retrieve content that is missing a director.
 
@@ -104,7 +107,7 @@ WHERE rank = 1;
 SELECT *
 FROM netflix
 WHERE director IS NULL OR director = '';
-
+```
 
 -- 6. Which is the Longest TV Show available on Netflix?
 -- Goal: Identify the movie with the longest runtime.
