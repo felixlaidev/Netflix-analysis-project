@@ -239,5 +239,7 @@ LIMIT 5;
 ## Conclusion
 
 1.Netflix has a diverse catalog dominated by movies rather than TV shows.
+
 2.The United States remains the largest contributor to Netflix’s library.
+
 3.The common rating of TV shows and movies are TV-MA
