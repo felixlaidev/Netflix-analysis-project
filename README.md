@@ -31,7 +31,7 @@ CREATE TABLE netflix (
 	listed_in	VARCHAR(100),
 	description VARCHAR(250)
 );
-
+```
 ##  Business question
 
 /*
