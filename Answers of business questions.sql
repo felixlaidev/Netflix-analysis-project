@@ -1,4 +1,4 @@
--- Netflix Data Analysis by SQL
+-- Netflix Data Analysis by PostgreSQL
 -- Questions and solutions of 15 business problems
 
 -- SELECT * FROM Netflix;
