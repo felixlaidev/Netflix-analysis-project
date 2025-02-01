@@ -435,7 +435,7 @@ plot_axis.legend().set_visible(False)
 plt.show()
 ```
 
-
+<img width="766" alt="Image" src="https://github.com/user-attachments/assets/a498e139-b597-4896-820b-9487b5615176" />
 
 # --------------------------------------------
 # TOP 10 COUNTRIES OF COUNTS OF MOVIES vs TV SHOWS 
@@ -482,8 +482,8 @@ plt.text(0.12, 0.92, 'The three most frequent countries have been highlighted',
 plt.tight_layout()
 plt.show()
 
-
 ```
+<img width="1453" alt="Image" src="https://github.com/user-attachments/assets/bd97e589-a503-4db7-824d-a444ddbd7a64" />
 
 # --------------------------------------------
 # MONTHLY ANALYSIS & VISUALIZATION
@@ -541,7 +541,7 @@ plt.legend(monthly_counts.index,
 plt.tight_layout()
 plt.show()
 ```
-
+<img width="1275" alt="Image" src="https://github.com/user-attachments/assets/77903f6c-e807-482c-850e-09acfa006ea6" />
 
 ## Conclusion
 
@@ -550,3 +550,11 @@ plt.show()
 2.The United States remains the largest contributor to Netflix’s library.
 
 3.The common rating of TV shows and movies are TV-MA
+
+4.Netflix prioritizes movie content over series, likely due to production cost and licensing agreements.
+
+5.The distribution highlights Netflix's strong reliance on American and Indian content, reflecting global market demand and production capabilities.
+
+6.The months of July (9.4%) and December (9.1%) have the highest percentage of content additions, indicating Netflix may strategically release more content during summertime and Christmas, knowing that people have more free time due to holidays, making it an ideal opportunity to attract and engage viewers.
+
+
