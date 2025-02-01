@@ -543,6 +543,32 @@ plt.show()
 ```
 <img width="1275" alt="Image" src="https://github.com/user-attachments/assets/77903f6c-e807-482c-850e-09acfa006ea6" />
 
+# Tableau for data visualization 
+
+![Image](https://github.com/user-attachments/assets/dc568722-52b3-42b5-be68-cda94c0119c5)
+### **Netflix Dashboard Summary**
+- **Dynamic Feature**: Allows users to select a specific movie and view detailed information.  
+
+#### **Key Metrics & Visualizations:**
+1. **Movie Information Section**:
+   - Displays **Type, Title, Rating, Date Added, Duration, Release Year, Genre, and Description** of the selected movie.
+   
+2. **Top 10 Genres**:
+   - Shows a **bar chart** of the most common genres, with **"Dramas, International Movies"** as the top genre (362 occurrences).
+
+3. **Ratings Distribution**:
+   - A **bar chart** depicting the number of titles under each rating category.
+   - **TV-MA** is the most frequent rating with **3,207 titles**, followed by **TV-14** (2,160).
+
+4. **Total Movies & TV Shows by Country**:
+   - A **choropleth map** illustrating the distribution of Netflix content across different countries.
+   - Darker shades represent higher numbers of content.
+
+5. **Movies & TV Shows Distribution**:
+   - A **bubble chart** showing the proportion of **Movies (6,131; 69.62%)** and **TV Shows (2,676; 30.38%)** in the dataset.
+
+This dashboard effectively visualizes Netflix's content distribution and enables dynamic exploration of individual movies.
+
 ## Conclusion
 
 1.Netflix has a diverse catalog dominated by movies rather than TV shows.
@@ -557,4 +583,4 @@ plt.show()
 
 6.The months of July (9.4%) and December (9.1%) have the highest percentage of content additions, indicating Netflix may strategically release more content during summertime and Christmas, knowing that people have more free time due to holidays, making it an ideal opportunity to attract and engage viewers.
 
-
+7.
