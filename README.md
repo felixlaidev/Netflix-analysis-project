@@ -583,4 +583,3 @@ This dashboard effectively visualizes Netflix's content distribution and enables
 
 6.The months of July (9.4%) and December (9.1%) have the highest percentage of content additions, indicating Netflix may strategically release more content during summertime and Christmas, knowing that people have more free time due to holidays, making it an ideal opportunity to attract and engage viewers.
 
-7.
