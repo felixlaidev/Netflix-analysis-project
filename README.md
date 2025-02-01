@@ -2,7 +2,7 @@
 
 
 ## Project Overview
-This project analyzes Netflix's content catalog to uncover trends in movies and TV shows. Using SQL and Python, we explore content distribution, ratings, release patterns, and thematic elements to derive actionable insights. 
+This project analyzes Netflix's content catalog to uncover trends in movies and TV shows. Using SQL,Python and tableau, we explore content distribution, ratings, release patterns, and thematic elements to derive actionable insights. 
 
 ![Image](https://github.com/user-attachments/assets/7e30f620-171c-4d58-8416-8626e2ac7b96)
 
